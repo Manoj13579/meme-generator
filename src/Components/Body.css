@@ -1,0 +1,101 @@
+.body-container {
+    background: linear-gradient(135deg, #E0F7FA, #B2EBF2);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    min-height: 100vh;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.inputbox-1{
+    height: 2.5rem;
+    width: 40%;
+    outline: none;
+    border: 1px solid #D5D4D8;
+    text-indent: 5px;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.inputbox-2{
+    outline: none;
+    height: 2.5rem;
+    width: 40%;
+    border: 1px solid #D5D4D8;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+button {
+    display: block;
+    width: 90%;
+    height: 2.5rem;
+    border-style: none;
+    color: #003366;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 40%;
+  }
+  
+  .meme-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .top-text, .bottom-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color:  #003366;
+    text-shadow: 1px 1px 0 #6d6a6a;
+    padding: 0 10px;
+    font-size: 1.5rem;
+    /* This property ensures that words will break and wrap onto the next line if they are too long to fit within their containing element. */
+    overflow-wrap: break-word; 
+    /* Adjust line height to control spacing vertically of words */
+    line-height: 1.2; 
+}
+
+.top-text {
+    top: 10px;
+}
+
+.bottom-text {
+    bottom: 10px;
+}
+  
+
+/*  Media Queries place behind main css */
+@media screen and (max-width: 1200px){
+    .body-container {
+        gap: 8rem;
+    }
+    .input-box {
+margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width: 660px){
+    .top-text, .bottom-text {
+        font-size: 1rem;  
+    } 
+}

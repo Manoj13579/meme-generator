@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Tahoma, sans-serif;
+}
+ 
+.navbar{
+    display: flex;
+    background-color: #E0F7FA;
+    height: 6.25rem;
+    align-items: center;
+    padding: 2rem;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left-side img {
+    max-height: 10vh;
+}
+
+.leftside-text{
+    color: #003366;
+}
