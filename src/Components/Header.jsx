@@ -1,15 +1,15 @@
 import React from "react";
-import memeIcon from "../assets/meme.png";
+import memeLogo from "../assets/meme.png";
 import "./Header.css";
 
 
 const Header = () => {
   return (
     <header className="navbar">
-    <div className="left-side">
-        <img src={memeIcon}/>
+    <nav className="left-side">
+        <img src={memeLogo} alt="Cool Meme Generator Logo"/>
         <h2 className="leftside-text">MemeGenerator</h2>
-    </div>
+    </nav>
     </header>
   )
 }

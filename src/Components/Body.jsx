@@ -4,6 +4,8 @@ import { toast } from 'react-toastify';
 import axios from 'axios';
 import Loader from '../Utilily/Loader';
 import { exportComponentAsJPEG } from 'react-component-export-image';
+import { Helmet } from 'react-helmet-async';
+
 
 
 const Body = () => {
@@ -53,6 +55,15 @@ const Body = () => {
 
   return (
     <>
+    <Helmet>
+      <title>Generate Meme</title>
+      <meta
+      name='description'
+      content='Generate Cool Meme'
+      />
+      {/* add this with correct path for canonical error in Meta seo inspector */}
+      <link rel='canonical' href='/'/>
+    </Helmet>
       {loading && <Loader />}
       <section className="body-container">
         <div className="input-box">
