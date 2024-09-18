@@ -92,7 +92,7 @@ const Body = () => {
         <div  className="container">
           {/* The ref={memeRef} attribute attaches the memeRef to the div element with the class image-wrapper. This means that after the component is rendered, memeRef.current will point to this div DOM element. */}
           <div ref={memeRef} className="image-wrapper">
-            <img className="meme-image" src={meme.randomImage} alt="Meme" />
+            <img className="meme-image" src={meme.randomImage} alt="Meme Image" />
             <h1 className="top-text">{meme.topText}</h1>
             <h1 className="bottom-text">{meme.bottomText}</h1>
           </div>

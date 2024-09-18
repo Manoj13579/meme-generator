@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div>
     <Header />
-    <Footer />
     <Body />
+    <Footer />
     </div>
   )
 }
